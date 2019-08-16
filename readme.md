@@ -1,3 +1,6 @@
+## Setup
+* fork, clone, use live-server
+
 ## Intro
  A CRM is a software system that let's you create and manage customer information. Use the existing code as a starting point for building a very basic CRM app. We will allow the creation of customers and searching for customers in our system. We are going to use this project to practice redux. We are not using webpack or creat-react-app. This is just a plain basic web app.
 
@@ -17,7 +20,8 @@ Redux is included in a script tag. This has created a global variable `Redux`. T
 * In the subscribe function retrieve the currentCustomer from the store `let currentCustomer = store.getState().currentCustomer;` and then `setState({customer:currentCustomer})`
 
 ## Customers.js
-* In componentDidMount subscribe to the store
+* In componentDidMount retrieve the customers from the store `store.getState().customers;` and then setState 
+* Also, subscribe to the store
 * In the subscribe function, retrieve 2 pieces of data from the store `store.getState().searchTerm;`  and `store.getState().customers;`
 * `setState for customers and searchTerm`
 * In the `viewCustomer` method, dispatch a message `{type:"CHANGE_CURRENT_CUSTOMER",value: cust}`
