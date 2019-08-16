@@ -31,6 +31,6 @@ Redux is included in a script tag. This has created a global variable `Redux`. T
 
 ## Bonus
 * Fix Customer.js so that the button says Update instead of add if the customer has an id value
-* If the currentCustomer has an id value then dispatch a message `{type:"UPDATE_CUSTOMER",value: this.state.customer}` when the Update button is clicked
+* When the Update button is clicked, if the the customer has an id value then dispatch a message `{type:"UPDATE_CUSTOMER",value: this.state.customer}` 
 * Change the customers reducer so that it has an if statement for `UPDATE_CUSTOMER`
 * Move the code for updating a customer into this if statement.
