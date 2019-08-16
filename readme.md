@@ -29,8 +29,14 @@ Redux is included in a script tag. This has created a global variable `Redux`. T
 ## SearchBar.js
 * In the onChange of the <input>, dispatch a message `{type:"CHANGE_SEARCH_TERM",value: e.target.value}`
 
-## Bonus
+## Bonus - Update
 * Fix Customer.js so that the button says Update instead of add if the customer has an id value
 * When the Update button is clicked, if the the customer has an id value then dispatch a message `{type:"UPDATE_CUSTOMER",value: this.state.customer}` 
 * Change the customers reducer so that it has an if statement for `UPDATE_CUSTOMER`
 * Move the code for updating a customer into this if statement.
+## Bonus - Remove
+* Add a button (or x icon) to Customers.js so that a customer can be removed
+* When clicked, dispatch a message `{type:"REMOVE_CUSTOMER",value: cust}`
+* Change the customers reducer so that it has an if statement for `REMOVE_CUSTOMER`
+* Use `slice` and `findIndex` to remove that customer from the state and return the new array
+
