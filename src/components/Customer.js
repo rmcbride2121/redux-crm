@@ -46,7 +46,7 @@ class Customer extends React.Component {
                     }} type="phone" className="form-control" id="phone" placeholder="Enter phone"></input>
                 </div>
                 <button onClick={(e)=>{
-                
+                    this.setState({customer:emptyCustomer});
                 }} type="button" className="btn btn-primary">Add</button>
                 <button onClick={(e)=>{
              
