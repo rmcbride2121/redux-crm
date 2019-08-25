@@ -11,10 +11,14 @@ class Customer extends React.Component {
         customer:  emptyCustomer
     }
     componentDidMount(){
-
+      store.subscribe(()=> {
+        let currentCustomer = store.getState().currentCustomer;
+        this.setState({customer:currentCustomer});
+      })
     }
 
     render(){
+      
         return(
             <div id="add-customer" className="page">
             <form>
